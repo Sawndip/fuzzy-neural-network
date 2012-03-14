@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SoftComputingWnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPE1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "HAVE_IPL" /Fp"Debug/SoftComputingWnd.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdAlu.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdBlob.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdColor.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdCoord.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdEigen.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdFilter.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdFMMNN.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdFNN.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdFourier.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdGF.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdNN.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdProjExt.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdSF.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdTh.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdTM.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\CmdVer.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\FRTK.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\ImageBaseView.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\MainFrm.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\MyCamView.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\myFNN.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\NNfunction.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\SoftComputingWnd.cpp"
+"F:\User\research\program\OnGoing\CT21_FRTK\SoftComputingWndDoc.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPE1.tmp" 
+Creating temporary file "C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPE2.tmp" with contents
+[
+ipl.lib highgui.lib cv.lib RSDLL.lib rpl.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SoftComputingWnd.pdb" /debug /machine:I386 /out:"Debug/SoftComputingWnd.exe" /pdbtype:sept 
+.\Debug\Camera.obj
+.\Debug\CmdAlu.obj
+.\Debug\CmdBlob.obj
+.\Debug\CmdColor.obj
+.\Debug\CmdCoord.obj
+.\Debug\CmdEigen.obj
+.\Debug\CmdFilter.obj
+.\Debug\CmdFMMNN.obj
+.\Debug\CmdFNN.obj
+.\Debug\CmdFourier.obj
+.\Debug\CmdGF.obj
+.\Debug\CmdNN.obj
+.\Debug\CmdProjExt.obj
+.\Debug\CmdSF.obj
+.\Debug\CmdTh.obj
+.\Debug\CmdTM.obj
+.\Debug\CmdVer.obj
+.\Debug\FMMNN.obj
+.\Debug\FRTK.obj
+.\Debug\GaborFilter.obj
+.\Debug\ImageBaseView.obj
+.\Debug\LogView.obj
+.\Debug\MainFrm.obj
+.\Debug\MyCamView.obj
+.\Debug\myFNN.obj
+.\Debug\NNfunction.obj
+.\Debug\SoftComputingWnd.obj
+.\Debug\SoftComputingWndDoc.obj
+.\Debug\SoftComputingWndView.obj
+.\Debug\StdAfx.obj
+.\Debug\SVV.obj
+.\Debug\SoftComputingWnd.res
+]
+Creating command line "link.exe @C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPE2.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+CmdAlu.cpp
+CmdBlob.cpp
+CmdColor.cpp
+CmdCoord.cpp
+CmdEigen.cpp
+CmdFilter.cpp
+CmdFMMNN.cpp
+CmdFNN.cpp
+CmdFourier.cpp
+CmdGF.cpp
+CmdNN.cpp
+CmdProjExt.cpp
+CmdSF.cpp
+CmdTh.cpp
+CmdTM.cpp
+CmdVer.cpp
+FRTK.cpp
+ImageBaseView.cpp
+MyCamView.cpp
+myFNN.cpp
+NNfunction.cpp
+SoftComputingWnd.cpp
+SoftComputingWndDoc.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SoftComputingWnd.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

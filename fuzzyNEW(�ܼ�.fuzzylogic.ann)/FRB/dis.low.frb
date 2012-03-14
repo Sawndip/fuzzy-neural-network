@@ -1,0 +1,268 @@
+!
+! happy fuzzy rulebase
+!
+BeginRuleBase
+	Name: disgust.lower.fuzzy.RuleSet
+	DefuzzificationType: CenterOfGravity
+
+	BeginIfVariables
+		Name: l1
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.2 0.0 0.2			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.4 0.2
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.6 0.2
+			!
+			Name: VH
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.8 1.0 0.2 0
+		EndTermSet
+		!
+		Name: l2
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0 0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.25
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0 0.25 0.0
+		EndTermSet
+		!
+		Name: l3
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.2 0.0 0.2			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.4 0.2
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.6 0.2
+			!
+			Name: VH
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.8 1.0 0.2 0
+		EndTermSet
+		!
+		Name: l4
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0 0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.25
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0 0.25 0.0
+		EndTermSet
+		!
+		Name: l5
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.3 0.0  0.4			
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.7 1.0  0.4 0.0
+		EndTermSet
+		!
+		Name: l6
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.2 0.0 0.2			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.4 0.2
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.6 0.2
+			!
+			Name: VH
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.8 1.0 0.2 0
+		EndTermSet
+		!
+		Name: l7
+		BeginTermSet
+			Name: Z
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.0 0.0 0.0
+			!
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.3 0.0  0.4			
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.7 1.0  0.4 0.0
+		EndTermSet
+	EndIfVariables
+
+	BeginThenVariable
+		Name: lo
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0 0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.25
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0 0.25 0.0
+		EndTermSet
+	EndThenVariable
+
+	BeginRule
+		Rule: 1
+			If l1 is H and l2 is M and l3 is M and l4 is L and l5 is M and l6 is M and l7 is L Then lo is H 1
+		Rule: 2
+			If l1 is L and l2 is L and l3 is M and l4 is L and l5 is M and l6 is VH and l7 is H Then lo is H 1
+		Rule: 3
+			If l1 is L and l2 is M and l3 is M and l4 is L and l5 is M and l6 is VH and l7 is H Then lo is H 1
+		Rule: 4
+			If l6 is L Then lo is L 0.25
+		Rule: 5
+			If l3 is L Then lo is L 0.25
+		Rule: 6
+			If l6 is H Then lo is L 0.25
+		Rule: 7
+			If l5 is H Then lo is L 0.5
+		Rule: 8
+			If l4 is M Then lo is L 0.33
+		Rule: 9
+			If l4 is H Then lo is L 0.33
+		Rule: 10
+			If l2 is L and l7 is L Then lo is L 0.17
+		Rule: 11
+			If l6 is M and l7 is H Then lo is L 0.125
+		Rule: 12
+			If l6 is VH and l7 is L Then lo is L 0.125
+		Rule: 13
+			If l3 is H Then lo is L 0.25
+		Rule: 14
+			If l3 is VH Then lo is L 0.25
+		Rule: 15
+			If l1 is L and l7 is L Then lo is L 0.125
+		Rule: 16
+			If l2 is H Then lo is L 0.33
+		Rule: 17
+			If l1 is M Then lo is L 0.25
+		Rule: 18
+			If l1 is H and l7 is H Then lo is L 0.125
+		Rule: 19
+			If l1 is VH Then lo is L 0.25
+	EndRule
+EndRuleBase

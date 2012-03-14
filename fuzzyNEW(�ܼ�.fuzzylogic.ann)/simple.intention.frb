@@ -1,0 +1,50 @@
+! 20001013
+! Made by DJ
+! simple intention reading rulebase
+! positive intention
+!
+BeginRuleBase
+	Name: simple.intention
+	DefuzzificationType: CenterOfGravity
+
+	BeginIfVariables
+		Name: u1
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular 
+			Parameters: 0.3 0.3			
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular 
+			Parameters: 0.7 0.3
+		EndTermSet
+	EndIfVariables
+
+	BeginThenVariable
+		Name: positive
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal
+			Parameters: 0.0 0.3 0.0 0.4			
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal
+			Parameters: 0.7 1.0 0.4 0.0
+		EndTermSet
+	EndThenVariable
+
+	BeginRule
+		Rule: 1
+			If u1 is L Then positive is L
+		Rule: 2
+			If u1 is H Then positive is H
+	EndRule
+EndRuleBase

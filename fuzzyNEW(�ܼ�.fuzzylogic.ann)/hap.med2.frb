@@ -1,0 +1,134 @@
+!
+! happy fuzzy rulebase
+!
+BeginRuleBase
+	Name: happy.middle
+	DefuzzificationType: CenterOfGravity
+
+	BeginIfVariables
+		Name: u1
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: u2
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: u3
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+	EndIfVariables
+
+	BeginThenVariable
+		Name: happy
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+	EndThenVariable
+
+	BeginRule
+		Rule: 1
+			If u1 is L and u2 is L u3 is L Then happy is L
+		Rule: 2
+			If u1 is L and u2 is L u3 is H Then happy is L
+		Rule: 3
+			If u1 is L and u2 is M u3 is L Then happy is L
+		Rule: 4
+			If u1 is L and u2 is M u3 is H Then happy is L
+		Rule: 5
+			If u1 is L and u2 is H u3 is L Then happy is L
+		Rule: 6
+			If u1 is L and u2 is H u3 is H Then happy is L
+		Rule: 7
+			If u1 is M and u2 is L u3 is L Then happy is L
+		Rule: 8
+			If u1 is M and u2 is L u3 is H Then happy is L
+		Rule: 9
+			If u1 is M and u2 is M u3 is L Then happy is L
+		Rule: 10
+			If u1 is M and u2 is M u3 is H Then happy is L
+		Rule: 11
+			If u1 is M and u2 is H u3 is L Then happy is L
+		Rule: 12
+			If u1 is M and u2 is H u3 is H Then happy is L
+		Rule: 13
+			If u1 is H and u2 is L u3 is L Then happy is L
+		Rule: 14
+			If u1 is H and u2 is L u3 is H Then happy is L
+		Rule: 15
+			If u1 is H and u2 is M u3 is L Then happy is L
+		Rule: 16
+			If u1 is H and u2 is M u3 is H Then happy is L
+		Rule: 17
+			If u1 is H and u2 is H u3 is L Then happy is L
+		Rule: 18
+			If u1 is H and u2 is H u3 is H Then happy is L
+	EndRule
+EndRuleBase

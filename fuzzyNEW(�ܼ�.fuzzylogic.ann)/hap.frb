@@ -1,0 +1,124 @@
+!
+! sample fuzzy rulebase
+!
+BeginRuleBase
+	Name: surprise.fuzzy.RuleSet
+	DefuzzificationType: CenterOfGravity
+
+	BeginIfVariables
+		Name: u
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: m
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: l
+	   	BeginTermSet
+				Name: L
+				UniverseOfDiscourse: 0. 1.0
+				NoOfSamples: 256
+				MembershipType: Trapezoidal 
+				Parameters: 0.0 0.2 0.0  0.2                    
+				!
+				Name: M
+				UniverseOfDiscourse: 0. 1.0
+				NoOfSamples: 256
+				MembershipType: Triangular
+				Parameters: 0.4 0.4
+				!
+				Name: H
+				UniverseOfDiscourse: 0. 1.0
+				NoOfSamples: 256
+				MembershipType: Triangular
+				Parameters: 0.6 0.4
+				!
+				Name: VH
+				UniverseOfDiscourse: 0. 1.0
+				NoOfSamples: 256
+				MembershipType: Trapezoidal 
+				Parameters: 0.8 1.0  0.2 0.0
+		EndTermSet
+	EndIfVariables
+
+	BeginThenVariable
+		Name: fe
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+	EndThenVariable
+
+	BeginRule
+		Rule: default
+			Then fe is L
+		Rule: ?
+			If u is H and m is L and l is L Then fe is M
+		Rule: ?
+			If u is H and m is L and l is M Then fe is M
+		Rule: ?
+			If u is H and m is L and l is H Then fe is H
+		Rule: ?
+			If u is M and m is L and l is L Then fe is M
+		Rule: ?
+			If u is M and m is L and l is M Then fe is M
+		Rule: ?
+			If u is M and m is L and l is H Then fe is H
+		Rule: ?
+			If u is L and m is L and l is L Then fe is M
+		Rule: ?
+			If u is L and m is L and l is M Then fe is M
+		Rule: ?
+			If u is L and m is L and l is H Then fe is H
+	EndRule
+EndRuleBase

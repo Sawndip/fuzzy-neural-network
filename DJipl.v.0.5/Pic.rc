@@ -1,0 +1,994 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Pic.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.kor\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      IDM_BRIGHT
+    BUTTON      IDM_DARK
+    SEPARATOR
+    BUTTON      IDM_CONTRAST
+    BUTTON      IDM_CONTRASTDOWN
+    SEPARATOR
+    BUTTON      IDM_TURNLEFT
+    BUTTON      IDM_TURNRIGHT
+    BUTTON      IDM_TURNVERTICAL
+    BUTTON      IDM_TURNHORIZONTAL
+    SEPARATOR
+    BUTTON      IDM_REGIONSELECT
+    BUTTON      IDM_DUPLICATE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pic 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Pic 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_PREVIEW_TOOLBAR DIALOG PRELOAD DISCARDABLE  0, 0, 188, 16
+STYLE DS_3DLOOK | WS_CHILD
+FONT 8, "System"
+BEGIN
+    PUSHBUTTON      "인쇄(&P)...",AFX_ID_PREVIEW_PRINT,2,2,44,12
+    PUSHBUTTON      "확대(&I)",AFX_ID_PREVIEW_ZOOMIN,48,2,44,12
+    PUSHBUTTON      "축소(&O)",AFX_ID_PREVIEW_ZOOMOUT,94,2,44,12
+    PUSHBUTTON      "닫기(&C)",AFX_ID_PREVIEW_CLOSE,140,2,44,12
+END
+
+IDD_COLOR1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "ColorTransform"
+FONT 10, "System"
+BEGIN
+    CONTROL         "RGB",IDC_RGB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,
+                    31,10
+    CONTROL         "CMY",IDC_HLS,"Button",BS_AUTORADIOBUTTON,7,22,32,10
+    CONTROL         "HSV",IDC_YIQ,"Button",BS_AUTORADIOBUTTON,7,37,30,10
+    CONTROL         "HLS",IDC_IRG,"Button",BS_AUTORADIOBUTTON,7,53,30,10
+    CONTROL         "YIQ",IDC_LIRG,"Button",BS_AUTORADIOBUTTON,7,68,28,10
+    CONTROL         "HSI",IDC_RGB2,"Button",BS_AUTORADIOBUTTON,44,7,28,10
+    CONTROL         "rgI",IDC_HLS2,"Button",BS_AUTORADIOBUTTON,44,22,25,10
+    CONTROL         "gbI",IDC_HLS3,"Button",BS_AUTORADIOBUTTON,44,37,26,10
+    CONTROL         "brI",IDC_HLS4,"Button",BS_AUTORADIOBUTTON,44,52,25,10
+    CONTROL         "rgb",IDC_HLS5,"Button",BS_AUTORADIOBUTTON,44,68,27,10
+    CONTROL         "I1I2I3",IDC_RGB3,"Button",BS_AUTORADIOBUTTON,76,7,34,10
+    CONTROL         "I1I2'I3'",IDC_HLS6,"Button",BS_AUTORADIOBUTTON,76,22,38,
+                    10
+    CONTROL         "YCrCb",IDC_HLS7,"Button",BS_AUTORADIOBUTTON,76,37,37,10
+    CONTROL         "I1I2I3''",IDC_HLS8,"Button",BS_AUTORADIOBUTTON,76,53,38,
+                    10
+    CONTROL         "STV",IDC_HLS9,"Button",BS_AUTORADIOBUTTON,76,67,29,10
+    CONTROL         "I1I2I3'''",IDC_RGB4,"Button",BS_AUTORADIOBUTTON,113,7,
+                    40,10
+    CONTROL         "all",IDC_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,
+                    81,24,10
+    CONTROL         "r",IDC_R,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,131,81,
+                    15,10
+    CONTROL         "g",IDC_G,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,81,
+                    15,10
+    CONTROL         "b",IDC_B,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,165,81,
+                    15,10
+END
+
+IDD_AFFINE1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Affine"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ANG,34,21,40,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "angle",-1,11,23,19,8
+    EDITTEXT        IDC_ZX,34,50,40,14,ES_AUTOHSCROLL
+    LTEXT           "zoom",-1,11,51,19,8
+    EDITTEXT        IDC_PX,34,73,40,14,ES_AUTOHSCROLL
+    LTEXT           "offset",-1,11,74,19,8
+    EDITTEXT        IDC_ZY,80,50,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PY,80,73,40,14,ES_AUTOHSCROLL
+    LTEXT           "x",-1,49,40,8,8
+    LTEXT           "y",-1,96,40,8,8
+END
+
+IDD_GABOR2 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Gabor"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_WAVE,47,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THETA,47,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "wave no.",IDC_STATIC,9,10,30,8
+    LTEXT           "angle",IDC_STATIC,9,33,19,8
+END
+
+IDD_TH2 DIALOG DISCARDABLE  0, 0, 193, 104
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Threshold"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Inside",IDC_INSIDE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,20,20,36,10
+    CONTROL         "Outside",IDC_OUTSIDE,"Button",BS_AUTORADIOBUTTON,20,35,
+                    41,10
+    CONTROL         "Great",IDC_GREAT,"Button",BS_AUTORADIOBUTTON,62,20,34,
+                    10
+    CONTROL         "Less",IDC_LESS,"Button",BS_AUTORADIOBUTTON,62,35,32,10
+    CONTROL         "OtsuH",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,101,20,36,
+                    10
+    CONTROL         "OtsuL",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,101,34,35,
+                    10
+    CONTROL         "Slider1",IDC_MIN_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,25,53,100,15
+    CONTROL         "Slider1",IDC_MAX_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,25,71,100,15
+    LTEXT           "Min",-1,10,58,13,8
+    LTEXT           "Max",-1,10,76,15,8
+    EDITTEXT        IDC_EMIN,145,54,40,14,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EMAX,146,73,40,14,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_OTSU_P,146,7,40,14,ES_AUTOHSCROLL
+END
+
+IDD_LP DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Log-Polar"
+FONT 10, "System"
+BEGIN
+    LTEXT           "U (horiz)",IDC_STATIC,7,7,29,8
+    EDITTEXT        IDC_UH,40,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "V (vert)",IDC_STATIC,7,28,24,8
+    EDITTEXT        IDC_VV,40,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "Method",IDC_STATIC,7,51,25,8
+    EDITTEXT        IDC_METHOD,40,51,40,14,ES_AUTOHSCROLL
+END
+
+IDD_MORPH DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Morphology"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Complement",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,7,57,10
+    CONTROL         "Reflection",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,7,21,
+                    49,10
+    CONTROL         "Dilation",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,7,35,
+                    41,10
+    CONTROL         "Erosion",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,7,49,41,
+                    10
+    CONTROL         "Opennig",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,7,66,
+                    43,10
+    CONTROL         "Closing",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,7,81,
+                    41,10
+    CONTROL         "Thickening",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,78,
+                    7,51,10
+    CONTROL         "Thinning",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,78,24,
+                    44,10
+    CONTROL         "Filling",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,78,41,
+                    36,10
+END
+
+IDD_HOUGH DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hough"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ANGLE,31,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TH,30,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "Ang",IDC_STATIC,7,7,13,8
+    LTEXT           "Th",IDC_STATIC,7,32,9,8
+END
+
+IDD_HLAC DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HLAC"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_U,28,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_V,28,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XF,86,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YF,86,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NF,140,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NNF,140,26,40,14,ES_AUTOHSCROLL
+    CONTROL         "Learning",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,49,45,10
+    CONTROL         "Testing",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,14,61,
+                    40,10
+    CONTROL         "AutoLearn",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,14,
+                    74,49,10
+    LTEXT           "u",IDC_STATIC,12,9,8,8
+    LTEXT           "v",IDC_STATIC,12,28,8,8
+    LTEXT           "Xf",IDC_STATIC,75,9,8,8
+    LTEXT           "Yf",IDC_STATIC,75,28,8,8
+    LTEXT           "Nf",IDC_STATIC,129,7,8,8
+    LTEXT           "Nnf",IDC_STATIC,129,26,12,8
+END
+
+IDD_RLP DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Log-Polar Remapping"
+FONT 10, "System"
+BEGIN
+    LTEXT           "w",IDC_STATIC,13,7,8,8
+    EDITTEXT        IDC_W,25,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "h",IDC_STATIC,13,28,8,8
+    EDITTEXT        IDC_H,25,28,40,14,ES_AUTOHSCROLL
+END
+
+IDD_FACE_RECOGNITION DIALOG DISCARDABLE  0, 0, 206, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FaceRecognition"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Simple Intention",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,7,69,10
+    CONTROL         "Face Segment",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,
+                    20,62,10
+    CONTROL         "Ground Truth",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,
+                    33,58,10
+    CONTROL         "face Locate",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,7,
+                    46,53,10
+    CONTROL         "Get PDF",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,7,59,43,
+                    10
+    CONTROL         "PDF Segment",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,7,
+                    72,60,10
+    CONTROL         "PDF Segment Analysis",IDC_RADIO7,"Button",
+                    BS_AUTORADIOBUTTON,7,85,90,10
+    CONTROL         "get fG",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,7,98,35,
+                    10
+    CONTROL         "LT Analysis",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,7,
+                    112,54,10
+    CONTROL         "face Seg2",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,7,
+                    125,48,10
+    CONTROL         "face Comp",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,76,7,
+                    50,10
+    EDITTEXT        IDC_MR,159,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SRR,159,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MG,159,39,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SGG,159,55,40,14,ES_AUTOHSCROLL
+    CONTROL         "r",IDC_R,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,134,74,
+                    19,10
+    CONTROL         "g",IDC_G,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,74,
+                    20,10
+    CONTROL         "b",IDC_B,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,174,74,
+                    20,10
+    EDITTEXT        IDC_TH,159,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WAVE2,159,109,40,14,ES_AUTOHSCROLL
+    LTEXT           "mr",IDC_STATIC,134,7,10,8
+    LTEXT           "srr",IDC_STATIC,134,23,10,8
+    LTEXT           "mg",IDC_STATIC,133,40,11,8
+    LTEXT           "sgg",IDC_STATIC,131,55,13,8
+    LTEXT           "th",IDC_STATIC,136,90,8,8
+    LTEXT           "wave",IDC_STATIC,136,109,19,8
+END
+
+IDD_SOFT_COMPUTING DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Soft Computing"
+FONT 10, "System"
+BEGIN
+    CONTROL         "EBP",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    7,16,30,10
+    CONTROL         "FO",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,7,30,25,10
+    CONTROL         "Sigmoid",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,51,16,43,10
+    CONTROL         "Tanh",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,51,30,32,
+                    10
+    EDITTEXT        IDC_EDIT1,140,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,140,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,140,39,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Learning",IDC_STATIC,7,3,38,88
+    GROUPBOX        "Activation",IDC_STATIC,50,3,38,88
+    LTEXT           "rate",IDC_STATIC,116,11,14,8
+    LTEXT           "wgt",IDC_STATIC,116,25,12,8
+    LTEXT           "train",IDC_STATIC,116,39,16,8
+END
+
+IDD_PROJECTION DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Projection"
+FONT 10, "System"
+BEGIN
+    CONTROL         "X direction",IDC_XDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,51,10
+    CONTROL         "Y direction",IDC_YDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,20,51,10
+    CONTROL         "weighted",IDC_WEIGHT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,65,7,45,10
+    CONTROL         "counted",IDC_WEIGHT2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,65,20,42,10
+END
+
+IDD_EDGE DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edge"
+FONT 10, "System"
+BEGIN
+    CONTROL         "H-edgeP",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,7,44,10
+    CONTROL         "V-edgeP",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,7,22,43,
+                    10
+    CONTROL         "sobel",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,7,37,34,
+                    10
+    CONTROL         "laplace",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,7,52,40,
+                    10
+    CONTROL         "canny",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,7,67,36,
+                    10
+    CONTROL         "H-edgeS",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,54,7,
+                    44,10
+    CONTROL         "V-edgeS",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,54,22,
+                    43,10
+    CONTROL         "HPF3x3L",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,54,37,
+                    46,10
+    CONTROL         "HPF5x5L",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,54,52,
+                    46,10
+    CONTROL         "LPF3x3G",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,54,67,
+                    46,10
+    CONTROL         "LPF5x5G",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON,99,7,
+                    46,10
+    CONTROL         "HPF3x3",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON,99,21,
+                    42,10
+    CONTROL         "HPF5x5",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON,99,35,
+                    42,10
+    CONTROL         "SHARP",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON,99,49,39,
+                    10
+    EDITTEXT        IDC_P1,140,61,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P2,140,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KERNEL,140,45,40,14,ES_AUTOHSCROLL
+END
+
+IDD_HIST DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Histogram"
+FONT 10, "System"
+BEGIN
+    CONTROL         "Gray",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    7,7,32,10
+    CONTROL         "Color",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,7,24,33,
+                    10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pic MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Pic\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Pic.EXE\0"
+            VALUE "ProductName", "Pic 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COLOR1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_AFFINE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_GABOR2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_TH2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_LP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_MORPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_HOUGH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_HLAC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_RLP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_FACE_RECOGNITION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_SOFT_COMPUTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PROJECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_EDGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_HIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "클립보드 내용 열기(&P)\tCtrl+V", ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구모음줄(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "상태표시줄(&S)",              ID_VIEW_STATUS_BAR
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "프로그램 정보(&A)...",        ID_APP_ABOUT
+    END
+END
+
+IDR_PICTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "파일 (&F)"
+    BEGIN
+        MENUITEM "클립보드 내용 열기(&P)\tCtrl+V", ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "열기(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "닫기(&C)",                    ID_FILE_CLOSE
+        MENUITEM "저장(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "다른 이름으로 저장(&A)...",   ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "인쇄(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "인쇄면 미리 보기(&V)",        ID_FILE_PRINT_PREVIEW
+        MENUITEM "프린터 설정(&R)...",          ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "최근 파일",                   ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "종료(&X)",                    ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "클립보드에 복사(&C)\tCtrl+C", ID_EDIT_COPY
+        MENUITEM "클립보드로 부터 붙여넣기(&P)\tCtrl+V", ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "영역 선택 (&S)",              IDM_REGIONSELECT
+        MENUITEM "복사본 만들기(&C)",           IDM_DUPLICATE
+        MENUITEM "&PointSave",                  ID_EDIT_POINT
+        MENUITEM "&Jinwoo",                     ID_EDIT_JINWOO
+    END
+    POPUP "보기(&V)"
+    BEGIN
+        MENUITEM "도구모음줄(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "상태표시줄(&S)",              ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "원래 크기로 보기(&O)",        ID_ORIGINALSIZE
+        POPUP "확대(&M)"
+        BEGIN
+            MENUITEM "2배 확대(&2)",                ID_MAG2
+            MENUITEM "3배 확대(&3)",                ID_MAG4
+            MENUITEM "4배 확대(&4)",                ID_MAG8
+        END
+        POPUP "축소(&N)"
+        BEGIN
+            MENUITEM "2분의 1로 축소(&2)",          ID_MAGN2
+            MENUITEM "3분의 1로 축소(&3)",          ID_MAGN4
+            MENUITEM "4분의 1로 축소(&4)",          ID_MAGN8
+        END
+        MENUITEM "BLOB/REAL(&B)",               ID_VIEW_BLOB
+        MENUITEM "WHITE/BLACK(&W)",             ID_VIEW_WHITE
+    END
+    POPUP "창(&W)"
+    BEGIN
+        MENUITEM "계단식 배열(&C)",             ID_WINDOW_CASCADE
+        MENUITEM "가로로 배열(&T)",             ID_WINDOW_TILE_HORZ
+        MENUITEM "세로로 배열(&T)",             ID_WINDOW_TILE_VERT
+        MENUITEM "아이콘 정렬(&A)",             ID_WINDOW_ARRANGE
+    END
+    POPUP "밝기 조절(&B)"
+    BEGIN
+        MENUITEM "반전(&I)",                    IDM_INVERT
+        MENUITEM SEPARATOR
+        MENUITEM "밝게 하기(&B)",               IDM_BRIGHT
+        MENUITEM "어둡게 하기(&D)",             IDM_DARK
+        MENUITEM SEPARATOR
+        MENUITEM "콘트라스트 증가(&C)",         IDM_CONTRAST
+        MENUITEM "콘트라스트 감소(&D)",         IDM_CONTRASTDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "이진화(&T)",                  ID_ADJUST_THRESHOLD
+    END
+    POPUP "필터링(&T)"
+    BEGIN
+        MENUITEM "HLAC(&A)",                    ID_FILTER_HLAC
+        MENUITEM "Morphology(&M)",              ID_FILTERING_MORP
+        MENUITEM "Projection(&P)",              ID_FILT_PROJ
+        MENUITEM "Edge(&G)",                    ID_FILT_EDGE
+        MENUITEM "Histogram(&H)",               ID_FILT_HISTO
+    END
+    POPUP "회전(&P)"
+    BEGIN
+        MENUITEM "왼쪽으로 회전(&L)",           IDM_TURNLEFT
+        MENUITEM "오른쪽으로 회전(&R)",         IDM_TURNRIGHT
+        MENUITEM "상하로 뒤집기(&H)",           IDM_TURNVERTICAL
+        MENUITEM "좌우로 뒤집기(&V)",           IDM_TURNHORIZONTAL
+        MENUITEM "Affine변환(&A)",              ID_ROTATE_AFFINE
+        MENUITEM "Hough(&O)",                   ID_HOUGH
+    END
+    POPUP "얼굴인식(&R)"
+    BEGIN
+        MENUITEM "LFT(&L)",                     ID_FACE_LFT
+        MENUITEM "LP(&P)",                      ID_FACE_LP
+        MENUITEM "RLP(&I)",                     ID_FACE_RLP
+        MENUITEM "컬러변환(&C)",                ID_FACE_COLOR
+        MENUITEM "RCER(&R)",                    ID_FACE_RCER
+        MENUITEM "가버필터링(&G)",              ID_FACE_GABOR
+        MENUITEM "얼굴찾기(&F)",                ID_FACE_FIND
+        MENUITEM "LPCenter(&T)",                ID_FACE_LPCENTER
+        MENUITEM "신경망(&N)",                  ID_FACE_NN
+        MENUITEM "퍼지논리(&U)",                ID_FACE_FL
+        MENUITEM "컬러특징(&A)",                ID_FACE_COLOR_SPEC
+        MENUITEM "얼굴요소(&E)",                ID_FACE_COMP
+        MENUITEM "학습(&S)",                    ID_FACE_STUDY
+        MENUITEM "DTM(&D)",                     ID_FACE_DTM
+        MENUITEM "CT21_4",                      ID_FACE_CT21_4
+    END
+    POPUP "모멘트(&M)"
+    BEGIN
+        MENUITEM "특징얻기(&F)",                ID_MOMENT_FEATURE
+    END
+    POPUP "동적인식(&D)"
+    BEGIN
+        MENUITEM "USB CAM INIT(&I)",            ID_DYNAMIC_INPUT
+        MENUITEM "OPT FLOW(&O)",                ID_DYNAMIC_OPT
+        MENUITEM "EDGE DETECT(&E)",             ID_DYNAMIC_EDGE
+        MENUITEM "MOTION DETECT(&M)",           ID_DYNAMIC_MOTION
+        MENUITEM "VIEW(&V)",                    ID_DYNAMIC_VIEW
+        MENUITEM "WHITE DETECT(&W)",            ID_DYNAMIC_WHITE
+        MENUITEM "FACE DETECT(&F)",             ID_DYNAMIC_FACE
+        MENUITEM "BACKGND EXC(&B)",             ID_DYNAMIC_BACKGND
+        MENUITEM "USB CAM SELECT(&S)",          ID_DYNAMIC_CAM_SELECT
+        MENUITEM "USB CAM SETTING(&T)",         ID_DYNAMIC_CAM_SETTING
+        MENUITEM "GET BACKGROUND(&G)",          ID_DYNAMIC_GETBACK
+        MENUITEM "USB CAM OFF(&X)",             ID_DYNAMIC_OFF
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "프로그램 정보(&A)...",        ID_APP_ABOUT
+    END
+    POPUP "수신호(&H)"
+    BEGIN
+        MENUITEM "Test(&T)",                    ID_HS_TEST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\IMAGE.ico"
+IDR_PICTYPE             ICON    DISCARDABLE     "res\\idr_imag.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "이미지 프로세싱 프로그램"
+    IDR_PICTYPE             "\nPic\nPic\n\n\nPic.Document\nPic Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Pic"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "새 문서를 작성합니다.\n새 파일"
+    ID_FILE_OPEN            "기존 문서를 엽니다.\n열기"
+    ID_FILE_CLOSE           "실행중인 문서를 닫습니다.\n닫기"
+    ID_FILE_SAVE            "실행 중인 문서를 저장합니다.\n저장"
+    ID_FILE_SAVE_AS         "실행 중인 문서를 다른 이름으로 저장합니다.\n다른 이름으로 저장"
+    ID_FILE_PAGE_SETUP      "인쇄 옵션을 바꿉니다.\n쪽 설정"
+    ID_FILE_PRINT_SETUP     "프린터 및 인쇄 옵션을 바꿉니다.\n인쇄 설정"
+    ID_FILE_PRINT           "실행 중인 문서를 인쇄합니다.\n인쇄"
+    ID_FILE_PRINT_PREVIEW   "인쇄할 내용을 화면으로 미리 봅니다.\n미리 보기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호 및 저작권을 나타냅니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지 물어보고 응용 프로그램을 종료합니다.\n종료"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "이 문서 열기"
+    ID_FILE_MRU_FILE2       "이 문서 열기"
+    ID_FILE_MRU_FILE3       "이 문서 열기"
+    ID_FILE_MRU_FILE4       "이 문서 열기"
+    ID_FILE_MRU_FILE5       "이 문서 열기"
+    ID_FILE_MRU_FILE6       "이 문서 열기"
+    ID_FILE_MRU_FILE7       "이 문서 열기"
+    ID_FILE_MRU_FILE8       "이 문서 열기"
+    ID_FILE_MRU_FILE9       "이 문서 열기"
+    ID_FILE_MRU_FILE10      "이 문서 열기"
+    ID_FILE_MRU_FILE11      "이 문서 열기"
+    ID_FILE_MRU_FILE12      "이 문서 열기"
+    ID_FILE_MRU_FILE13      "이 문서 열기"
+    ID_FILE_MRU_FILE14      "이 문서 열기"
+    ID_FILE_MRU_FILE15      "이 문서 열기"
+    ID_FILE_MRU_FILE16      "이 문서 열기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "실행 중인 문서를 위해 또 하나의 창을 엽니다.\n새 창"
+    ID_WINDOW_ARRANGE       "창의 아래쪽에 아이콘을 정렬합니다.\n아이콘 정렬"
+    ID_WINDOW_CASCADE       "창이 겹치도록 계단식으로 배열합니다.\n계단식"
+    ID_WINDOW_TILE_HORZ     "창을 겹치지 않도록 바둑판식으로 배열합니다.\n바둑판식"
+    ID_WINDOW_TILE_VERT     "창을 겹치지 않도록 바둑판식으로 배열합니다.\n바둑판식"
+    ID_WINDOW_SPLIT         "실행 중인 창을 여러 개로 나눕니다.\n나누기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택된 내용을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 내용을 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택된 내용을 복사하여 클립보드에 저장합니다.\n복사"
+    ID_EDIT_CUT             "선택된 내용을 잘라내어 클립보드에 저장합니다.\n잘라내기"
+    ID_EDIT_FIND            "지정된 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 동작을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "지정된 문자열을 다른 문자열로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "문서 전체를 선택합니다.\n전체 선택"
+    ID_EDIT_UNDO            "마지막으로 실행한 것을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 취소한 동작을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "도구모음줄을 보이거나 감춥니다.\n도구모음줄 전환"
+    ID_VIEW_STATUS_BAR      "상태표시줄을 보이거나 감춥니다.\n상태표시줄 전환"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 바꿉니다."
+    AFX_IDS_SCMOVE          "창 위치를 바꿉니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면으로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "사용 중인 창을 닫고 문서를 저장할지 묻습니다."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복구합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+    AFX_IDS_MDICHILD        "이 창을 활성화합니다."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "미리 보기 모드를 닫습니다.\n미리 보기 취소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LOWPASS             "부드럽게 하기 필터를 적용합니다.\n부드럽게 하기"
+    IDM_HIGHPASS            "날카롭게 하기 필터를 적용합니다.\n날카롭게 하기"
+    IDM_BOUNDARY            "경계선 추출 필터를 적용합니다.\n경계선 추출"
+    IDM_EMBOSSING           "엠보싱 효과 필터를 적용합니다.\n엠보싱 효과"
+    IDM_INVERT              "이미지를 반전시킵니다.\n반전"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_REGIONSELECT        "영역을 선택합니다.\n영역 선택"
+    IDM_CONTRASTDOWN        "이미지의 콘트라스트를 감소 시킵니다.\n콘트라스트 감소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_TURNRIGHT           "이미지를 오른쪽으로 회전합니다.\n오른쪽으로 회전"
+    IDM_TURNLEFT            "이미지를 왼쪽으로 회전합니다.\n왼쪽으로 회전"
+    IDM_TURNVERTICAL        "이미지를 상하로 뒤집습니다.\n상하로 뒤집기"
+    IDM_TURNHORIZONTAL      "이미지를 좌우로 뒤집습니다.\n좌우로 뒤집기"
+    IDM_DUPLICATE           "클립보드를 이용하여 복사본을 만듭니다.\n복사본 만들기"
+    ID_MAG2                 "2배 확대하여 보여줍니다.\n2배 확대"
+    ID_MAG4                 "3배 확대하여 보여줍니다.\n3배 확대"
+    ID_MAG8                 "4배 확대하여 보여줍니다.\n4배 확대"
+    ID_MAGN2                "2분의 1로 축소하여 보여줍니다.\n2분의 1로 축소"
+    ID_MAGN4                "3분의 1로 축소하여 보여줍니다.\n3분의 1로 축소"
+    ID_MAGN8                "4분의 1로 축소하여 보여줍니다.\n4분의 1로 축소"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_BRIGHT              "이미지를 밝게 합니다.\n밝게 하기"
+    IDM_DARK                "이미지를 어둡게 합니다.\n어둡게 하기"
+    IDM_CONTRAST            "이미지의 콘트라스트를 증가 시킵니다.\n콘트라스트 증가"
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif
+#include "res\Pic.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#include "l.kor\afxprint.rc"        // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

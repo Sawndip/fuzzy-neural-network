@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SoftComputingWnd - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPFF.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "HAVE_IPL" /Fp"Debug/SoftComputingWnd.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\User\¿¬±¸\arc\program\OnGoing\FEREC_WNN\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DJ\LOCALS~1\Temp\RSPFF.tmp" 
+Creating temporary file "C:\DOCUME~1\DJ\LOCALS~1\Temp\RSP100.tmp" with contents
+[
+ipl.lib highgui.lib cv.lib RSDLL.lib rpl.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SoftComputingWnd.pdb" /debug /machine:I386 /out:"Debug/SoftComputingWnd.exe" /pdbtype:sept 
+".\Debug\CmdAlu.obj"
+".\Debug\CmdBlob.obj"
+".\Debug\CmdColor.obj"
+".\Debug\CmdCoord.obj"
+".\Debug\CmdEigen.obj"
+".\Debug\CmdFilter.obj"
+".\Debug\CmdFMMNN.obj"
+".\Debug\CmdFNN.obj"
+".\Debug\CmdFourier.obj"
+".\Debug\CmdGF.obj"
+".\Debug\CmdNN.obj"
+".\Debug\CmdProjExt.obj"
+".\Debug\CmdSF.obj"
+".\Debug\CmdTh.obj"
+".\Debug\CmdTM.obj"
+".\Debug\CmdVer.obj"
+".\Debug\FMMNN.obj"
+".\Debug\FRTK.obj"
+".\Debug\GaborFilter.obj"
+".\Debug\ImageBaseView.obj"
+".\Debug\LogView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\myFNN.obj"
+".\Debug\NNfunction.obj"
+".\Debug\SoftComputingWnd.obj"
+".\Debug\SoftComputingWndDoc.obj"
+".\Debug\SoftComputingWndView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SVV.obj"
+".\Debug\SoftComputingWnd.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\DJ\LOCALS~1\Temp\RSP100.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SoftComputingWnd.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

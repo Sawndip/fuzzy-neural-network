@@ -1,0 +1,1211 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SoftComputingWnd.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CMD_COLOR DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "Source",IDC_STATIC,7,7,24,8
+    COMBOBOX        IDC_SOURCE,39,7,48,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Result",IDC_STATIC,7,21,22,8
+    COMBOBOX        IDC_RESULT,39,21,48,74,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Convert",IDC_ACT_CONVERT,130,7,50,14
+END
+
+IDD_CMD_FILTER DIALOG DISCARDABLE  0, 0, 187, 105
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_FILTERING_METHOD,38,7,68,98,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,7,7,17,8
+    PUSHBUTTON      "Filtering",IDC_ACT_FILTERING,130,7,50,14
+    CONTROL         "Slider1",IDC_LOW_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,32,68,15
+    CONTROL         "Slider1",IDC_HIGH_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,45,68,15
+    LTEXT           "L",IDC_STATIC,24,35,8,8
+    LTEXT           "H",IDC_STATIC,24,48,8,8
+    EDITTEXT        IDC_LOW_TH_VAL,106,34,19,14,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_HIGH_TH_VAL,106,48,18,14,ES_READONLY | NOT WS_BORDER
+    CONTROL         "Slider1",IDC_GABOR_ANGLE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,45,69,35,15
+    LTEXT           "Angle",IDC_STATIC,24,71,19,8
+    EDITTEXT        IDC_GABOR_ANGLE_VAL,81,70,21,14,ES_READONLY | NOT 
+                    WS_BORDER
+    CONTROL         "Slider1",IDC_GABOR_WAVE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,45,83,35,15
+    LTEXT           "Wave",IDC_STATIC,24,85,20,8
+    EDITTEXT        IDC_GABOR_WAVE_VAL,81,84,21,14,ES_READONLY | NOT 
+                    WS_BORDER
+    GROUPBOX        "Threshold Level",IDC_STATIC,7,24,125,39
+    GROUPBOX        "Gabor Kernel",IDC_STATIC,7,59,125,39
+END
+
+IDD_CMD_FTX DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Transform",IDC_BUTTON1,130,7,50,14
+    COMBOBOX        IDC_FOURIER,42,7,48,86,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+END
+
+IDD_CMD_BLOB DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Analyze",IDC_BLOB_ANAL,130,7,50,14
+    COMBOBOX        IDC_BLOB_METHOD,40,7,48,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Features",IDC_STATIC,7,7,30,8
+    COMBOBOX        IDC_MORPH,40,25,48,69,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Morph",IDC_STATIC,7,26,22,8
+    EDITTEXT        IDC_MORPH_NUM,98,24,20,14,ES_AUTOHSCROLL
+END
+
+IDD_CMD_SF DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Extract",IDC_SF_EXT,130,7,50,14
+    COMBOBOX        IDC_SF_FEAT,41,6,48,88,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Features",IDC_STATIC,7,7,30,8
+END
+
+IDD_CMD_GF DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Extract",IDC_GF_EXT,130,7,50,14
+    LTEXT           "Local",IDC_STATIC,7,7,19,8
+    LTEXT           "Global",IDC_STATIC,7,31,22,8
+    COMBOBOX        IDC_GF_LOCAL,39,7,48,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_GF_GLOBAL,39,32,48,61,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CMD_TEMPLATE_MATCHING DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Matching",IDC_TEMP_MATCH,130,7,50,14
+    COMBOBOX        IDC_TM_METHOD,38,7,48,88,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Target",IDC_STATIC,7,9,22,8
+    COMBOBOX        IDC_TM_METHOD2,38,25,48,69,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,27,25,8
+    CONTROL         "Slider1",IDC_MATCH_DEGREE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,38,48,47,15
+    LTEXT           "Degree",IDC_STATIC,7,50,25,8
+    EDITTEXT        IDC_MATCH_DEGREE_VAL,87,47,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_CMD_PROJ_EXT DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Extract",IDC_PROJ_EX,130,7,50,14
+    COMBOBOX        IDC_PROJ_DIR,42,7,48,88,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Direction",IDC_STATIC,7,7,30,8
+END
+
+IDD_CMD_COORD DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Transform",IDC_COORD_TX,130,7,50,14
+    COMBOBOX        IDC_SRC_COORD,38,7,48,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_TAR_COORD,38,22,48,72,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Source",IDC_STATIC,7,7,24,8
+    LTEXT           "Target",IDC_STATIC,7,22,22,8
+END
+
+IDD_CMD_THRESHOLD DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Threshold",IDC_ACT_TH,130,7,50,14
+    CONTROL         "Slider1",IDC_MIN_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,31,30,72,15
+    CONTROL         "Slider1",IDC_MAX_TH,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,31,47,72,15
+    COMBOBOX        IDC_TH_METHOD,37,7,48,87,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    LTEXT           "MIN",IDC_STATIC,7,32,14,8
+    LTEXT           "MAX",IDC_STATIC,7,49,16,8
+    EDITTEXT        IDC_MAX_THR,104,47,40,14,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_MIN_THR,104,29,40,14,ES_READONLY | NOT WS_BORDER
+END
+
+IDD_VERIFY DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Verify",IDC_ACT_VER,130,7,50,14
+    EDITTEXT        IDC_FACE_VER_VAL,83,7,23,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    CONTROL         "Slider1",IDC_FACE_VER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,29,7,52,15
+    LTEXT           "FACE",IDC_STATIC,7,7,18,8
+    EDITTEXT        IDC_LEFT_EYEB,36,37,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RIGHT_EYEB,61,37,21,14,ES_AUTOHSCROLL
+    LTEXT           "HORIZ",IDC_STATIC,8,40,23,8
+    EDITTEXT        IDC_NOSE,85,37,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MOUTH,110,37,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOREHEAD,36,55,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INTERDIST,61,55,21,14,ES_AUTOHSCROLL
+    LTEXT           "VERT",IDC_STATIC,8,58,19,8
+    EDITTEXT        IDC_INTERNM,85,55,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JAW,110,55,21,14,ES_AUTOHSCROLL
+END
+
+IDD_CMD_ALU DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Perform",IDC_ACT_ALU,130,7,50,14
+    COMBOBOX        IDC_OPERATOR,46,7,48,80,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Operator",IDC_STATIC,7,7,29,8
+    CONTROL         "Image 1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,28,42,10
+    CONTROL         "Image 2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,40,42,10
+    CONTROL         "Image 3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,52,42,10
+    EDITTEXT        IDC_CONST,46,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "Constant",IDC_STATIC,7,67,30,8
+END
+
+IDD_CMD_NN DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Recognize",IDC_REC_NN,130,7,50,14
+    GROUPBOX        "Parameters",IDC_STATIC,7,43,173,44
+    COMBOBOX        IDC_NN_METHOD,38,7,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    EDITTEXT        IDC_NN_EP,34,57,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NN_ERR,34,73,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NN_LR,86,57,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NN_MO,86,73,30,14,ES_AUTOHSCROLL
+    LTEXT           "Ep",IDC_STATIC,10,59,10,8
+    LTEXT           "Err",IDC_STATIC,10,73,11,8
+    LTEXT           "Lr",IDC_STATIC,67,59,8,8
+    LTEXT           "Mo",IDC_STATIC,67,73,11,8
+END
+
+IDD_CMD_FMMNN DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Recognize",IDC_REC_FMMNN,130,7,50,14
+    GROUPBOX        "Parameters",IDC_STATIC,7,43,173,44
+    COMBOBOX        IDC_FMMNN_METHOD,38,7,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    EDITTEXT        IDC_FMMNN_R,34,57,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FMMNN_THETA,34,73,30,14,ES_AUTOHSCROLL
+    LTEXT           "R",IDC_STATIC,10,59,8,8
+    LTEXT           "Theta",IDC_STATIC,10,73,19,8
+END
+
+IDD_CMD_FNN DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Recognize",IDC_REC_FNN,130,7,50,14
+    GROUPBOX        "Parameters",IDC_STATIC,7,43,173,44
+    COMBOBOX        IDC_FNN_METHOD,38,7,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    EDITTEXT        IDC_FNN_EP,34,57,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FNN_ERR,34,73,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FNN_LR,86,57,30,14,ES_AUTOHSCROLL
+    LTEXT           "Ep",IDC_STATIC,10,59,10,8
+    LTEXT           "Err",IDC_STATIC,10,73,11,8
+    LTEXT           "Lr",IDC_STATIC,67,59,8,8
+    EDITTEXT        IDC_FNN_SP1,140,57,30,14,ES_AUTOHSCROLL
+    LTEXT           "Sp1",IDC_STATIC,121,57,14,8
+    EDITTEXT        IDC_FNN_SP2,140,73,30,14,ES_AUTOHSCROLL
+    LTEXT           "Sp2",IDC_STATIC,121,73,14,8
+END
+
+IDD_CMD_EIGEN DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Recognize",IDC_REC_EIGEN,130,7,50,14
+    GROUPBOX        "Parameters",IDC_STATIC,7,43,173,44
+    COMBOBOX        IDC_EIGEN_METHOD,38,7,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    EDITTEXT        IDC_EIGEN_EP,34,57,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EIGEN_ERR,34,73,30,14,ES_AUTOHSCROLL
+    LTEXT           "Ep",IDC_STATIC,10,59,10,8
+    LTEXT           "Err",IDC_STATIC,10,73,11,8
+END
+
+IDD_CMD_MOTION DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Analysis",IDC_ACT_MOTION,130,7,50,14
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    COMBOBOX        IDC_MOTION_METHOD,39,7,48,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_CMD_DEPTH DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Extract",IDC_ACT_DEPTH,130,7,50,14
+    LTEXT           "Method",IDC_STATIC,7,7,25,8
+    COMBOBOX        IDC_DEPTH_METHOD,39,7,48,80,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CMD_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_CMD_FTX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_BLOB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_SF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_GF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_TEMPLATE_MATCHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_PROJ_EXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_COORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_THRESHOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_VERIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_ALU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_NN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_FMMNN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_FNN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_EIGEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_MOTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CMD_DEPTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CMD_COLOR DLGINIT
+BEGIN
+    IDC_SOURCE, 0x403, 4, 0
+0x4752, 0x0042, 
+    IDC_SOURCE, 0x403, 4, 0
+0x4c48, 0x0053, 
+    IDC_SOURCE, 0x403, 4, 0
+0x5348, 0x0056, 
+    IDC_SOURCE, 0x403, 4, 0
+0x554c, 0x0056, 
+    IDC_SOURCE, 0x403, 4, 0
+0x5559, 0x0056, 
+    IDC_SOURCE, 0x403, 6, 0
+0x4359, 0x4372, 0x0062, 
+    IDC_SOURCE, 0x403, 4, 0
+0x4350, 0x0041, 
+    IDC_SOURCE, 0x403, 4, 0
+0x5958, 0x005a, 
+    IDC_RESULT, 0x403, 4, 0
+0x4752, 0x0042, 
+    IDC_RESULT, 0x403, 4, 0
+0x4c48, 0x0053, 
+    IDC_RESULT, 0x403, 4, 0
+0x5348, 0x0056, 
+    IDC_RESULT, 0x403, 4, 0
+0x554c, 0x0056, 
+    IDC_RESULT, 0x403, 4, 0
+0x5559, 0x0056, 
+    IDC_RESULT, 0x403, 6, 0
+0x4359, 0x4372, 0x0062, 
+    IDC_RESULT, 0x403, 4, 0
+0x4350, 0x0041, 
+    IDC_RESULT, 0x403, 4, 0
+0x5958, 0x005a, 
+    0
+END
+
+IDD_CMD_FILTER DLGINIT
+BEGIN
+    IDC_FILTERING_METHOD, 0x403, 6, 0
+0x4147, 0x4f42, 0x0052, 
+    IDC_FILTERING_METHOD, 0x403, 14, 0
+0x5250, 0x5745, 0x5449, 0x5f54, 0x7833, 0x5f33, 0x0056, 
+    IDC_FILTERING_METHOD, 0x403, 14, 0
+0x5250, 0x5745, 0x5449, 0x5f54, 0x7833, 0x5f33, 0x0048, 
+    IDC_FILTERING_METHOD, 0x403, 12, 0
+0x4f53, 0x4542, 0x5f4c, 0x7833, 0x5f33, 0x0056, 
+    IDC_FILTERING_METHOD, 0x403, 12, 0
+0x4f53, 0x4542, 0x5f4c, 0x7833, 0x5f33, 0x0048, 
+    IDC_FILTERING_METHOD, 0x403, 14, 0
+0x414c, 0x4c50, 0x4341, 0x4149, 0x5f4e, 0x7833, 0x0033, 
+    IDC_FILTERING_METHOD, 0x403, 14, 0
+0x414c, 0x4c50, 0x4341, 0x4149, 0x5f4e, 0x7835, 0x0035, 
+    IDC_FILTERING_METHOD, 0x403, 10, 0
+0x4143, 0x4e4e, 0x5f59, 0x7833, 0x0033, 
+    IDC_FILTERING_METHOD, 0x403, 10, 0
+0x4143, 0x4e4e, 0x5f59, 0x7835, 0x0035, 
+    IDC_FILTERING_METHOD, 0x403, 13, 0
+0x4147, 0x5355, 0x4953, 0x4e41, 0x335f, 0x3378, "\000" 
+    IDC_FILTERING_METHOD, 0x403, 11, 0
+0x4948, 0x4150, 0x5353, 0x335f, 0x3378, "\000" 
+    IDC_FILTERING_METHOD, 0x403, 11, 0
+0x4948, 0x4150, 0x5353, 0x355f, 0x3578, "\000" 
+    IDC_FILTERING_METHOD, 0x403, 12, 0
+0x4853, 0x5241, 0x4550, 0x5f4e, 0x7833, 0x0033, 
+    IDC_FILTERING_METHOD, 0x403, 11, 0
+0x454d, 0x4944, 0x4e41, 0x335f, 0x3378, "\000" 
+    IDC_FILTERING_METHOD, 0x403, 11, 0
+0x454d, 0x4944, 0x4e41, 0x355f, 0x3578, "\000" 
+    IDC_FILTERING_METHOD, 0x403, 8, 0
+0x414d, 0x5f58, 0x7833, 0x0033, 
+    IDC_FILTERING_METHOD, 0x403, 8, 0
+0x414d, 0x5f58, 0x7835, 0x0035, 
+    IDC_FILTERING_METHOD, 0x403, 8, 0
+0x494d, 0x5f4e, 0x7833, 0x0033, 
+    IDC_FILTERING_METHOD, 0x403, 8, 0
+0x494d, 0x5f4e, 0x7835, 0x0035, 
+    0
+END
+
+IDD_CMD_FTX DLGINIT
+BEGIN
+    IDC_FOURIER, 0x403, 3, 0
+0x5446, "\000" 
+    IDC_FOURIER, 0x403, 4, 0
+0x4649, 0x0054, 
+    IDC_FOURIER, 0x403, 4, 0
+0x4344, 0x0054, 
+    IDC_FOURIER, 0x403, 5, 0
+0x4449, 0x5443, "\000" 
+    0
+END
+
+IDD_CMD_COORD DLGINIT
+BEGIN
+    IDC_SRC_COORD, 0x403, 10, 0
+0x4143, 0x5452, 0x5345, 0x4149, 0x004e, 
+    IDC_SRC_COORD, 0x403, 6, 0
+0x4f50, 0x414c, 0x0052, 
+    IDC_SRC_COORD, 0x403, 9, 0
+0x4f4c, 0x5047, 0x4c4f, 0x5241, "\000" 
+    IDC_TAR_COORD, 0x403, 10, 0
+0x4143, 0x5452, 0x5345, 0x4149, 0x004e, 
+    IDC_TAR_COORD, 0x403, 6, 0
+0x4f50, 0x414c, 0x0052, 
+    IDC_TAR_COORD, 0x403, 9, 0
+0x4f4c, 0x5047, 0x4c4f, 0x5241, "\000" 
+    0
+END
+
+IDD_CMD_BLOB DLGINIT
+BEGIN
+    IDC_BLOB_METHOD, 0x403, 9, 0
+0x414c, 0x4542, 0x494c, 0x474e, "\000" 
+    IDC_BLOB_METHOD, 0x403, 9, 0
+0x414d, 0x5f58, 0x4c42, 0x424f, "\000" 
+    IDC_BLOB_METHOD, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_MORPH, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_MORPH, 0x403, 5, 0
+0x504f, 0x4e45, "\000" 
+    IDC_MORPH, 0x403, 6, 0
+0x4c43, 0x534f, 0x0045, 
+    IDC_MORPH, 0x403, 7, 0
+0x4944, 0x414c, 0x4554, "\000" 
+    IDC_MORPH, 0x403, 6, 0
+0x5245, 0x444f, 0x0045, 
+    0
+END
+
+IDD_CMD_TEMPLATE_MATCHING DLGINIT
+BEGIN
+    IDC_TM_METHOD, 0x403, 4, 0
+0x5945, 0x0045, 
+    IDC_TM_METHOD, 0x403, 8, 0
+0x5945, 0x4245, 0x4f52, 0x0057, 
+    IDC_TM_METHOD, 0x403, 5, 0
+0x4146, 0x4543, "\000" 
+    IDC_TM_METHOD, 0x403, 6, 0
+0x4f4d, 0x5455, 0x0048, 
+    IDC_TM_METHOD, 0x403, 5, 0
+0x4f4e, 0x4553, "\000" 
+    IDC_TM_METHOD2, 0x403, 7, 0
+0x5153, 0x4944, 0x4646, "\000" 
+    IDC_TM_METHOD2, 0x403, 12, 0
+0x5153, 0x4944, 0x4646, 0x4e5f, 0x524f, 0x004d, 
+    IDC_TM_METHOD2, 0x403, 6, 0
+0x4343, 0x524f, 0x0052, 
+    IDC_TM_METHOD2, 0x403, 11, 0
+0x4343, 0x524f, 0x5f52, 0x4f4e, 0x4d52, "\000" 
+    IDC_TM_METHOD2, 0x403, 7, 0
+0x4343, 0x454f, 0x4646, "\000" 
+    IDC_TM_METHOD2, 0x403, 12, 0
+0x4343, 0x454f, 0x4646, 0x4e5f, 0x524f, 0x004d, 
+    0
+END
+
+IDD_CMD_GF DLGINIT
+BEGIN
+    IDC_GF_LOCAL, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_GF_LOCAL, 0x403, 4, 0
+0x5945, 0x0045, 
+    IDC_GF_LOCAL, 0x403, 8, 0
+0x5945, 0x4245, 0x4f52, 0x0057, 
+    IDC_GF_LOCAL, 0x403, 6, 0
+0x4f4d, 0x5455, 0x0048, 
+    IDC_GF_LOCAL, 0x403, 4, 0
+0x524e, 0x0046, 
+    IDC_GF_LOCAL, 0x403, 4, 0
+0x4c4e, 0x0046, 
+    IDC_GF_LOCAL, 0x403, 6, 0
+0x4857, 0x4c4f, 0x0045, 
+    IDC_GF_GLOBAL, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_GF_GLOBAL, 0x403, 4, 0
+0x5945, 0x0045, 
+    IDC_GF_GLOBAL, 0x403, 8, 0
+0x5945, 0x4245, 0x4f52, 0x0057, 
+    IDC_GF_GLOBAL, 0x403, 6, 0
+0x4f4d, 0x5455, 0x0048, 
+    IDC_GF_GLOBAL, 0x403, 4, 0
+0x524e, 0x0046, 
+    IDC_GF_GLOBAL, 0x403, 4, 0
+0x4c4e, 0x0046, 
+    IDC_GF_GLOBAL, 0x403, 6, 0
+0x4857, 0x4c4f, 0x0045, 
+    0
+END
+
+IDD_CMD_SF DLGINIT
+BEGIN
+    IDC_SF_FEAT, 0x403, 6, 0
+0x4e41, 0x4c47, 0x0045, 
+    IDC_SF_FEAT, 0x403, 9, 0
+0x5548, 0x4f4d, 0x454d, 0x544e, "\000" 
+    IDC_SF_FEAT, 0x403, 8, 0
+0x314c, 0x4e20, 0x524f, 0x004d, 
+    IDC_SF_FEAT, 0x403, 8, 0
+0x324c, 0x4e20, 0x524f, 0x004d, 
+    IDC_SF_FEAT, 0x403, 7, 0
+0x2043, 0x4f4e, 0x4d52, "\000" 
+    IDC_SF_FEAT, 0x403, 7, 0
+0x494d, 0x4d4e, 0x5841, "\000" 
+    IDC_SF_FEAT, 0x403, 8, 0
+0x4f4e, 0x5a4e, 0x5245, 0x004f, 
+    IDC_SF_FEAT, 0x403, 8, 0
+0x454d, 0x4e41, 0x5453, 0x0044, 
+    IDC_SF_FEAT, 0x403, 10, 0
+0x494d, 0x4d4e, 0x5841, 0x4f4c, 0x0043, 
+    0
+END
+
+IDD_CMD_THRESHOLD DLGINIT
+BEGIN
+    IDC_TH_METHOD, 0x403, 3, 0
+0x5447, "\000" 
+    IDC_TH_METHOD, 0x403, 4, 0
+0x5447, 0x0045, 
+    IDC_TH_METHOD, 0x403, 3, 0
+0x544c, "\000" 
+    IDC_TH_METHOD, 0x403, 4, 0
+0x544c, 0x0045, 
+    IDC_TH_METHOD, 0x403, 4, 0
+0x554f, 0x0054, 
+    IDC_TH_METHOD, 0x403, 3, 0
+0x4e49, "\000" 
+    IDC_TH_METHOD, 0x403, 5, 0
+0x4948, 0x5453, "\000" 
+    0
+END
+
+IDD_CMD_PROJ_EXT DLGINIT
+BEGIN
+    IDC_PROJ_DIR, 0x403, 6, 0
+0x4f48, 0x4952, 0x005a, 
+    IDC_PROJ_DIR, 0x403, 5, 0
+0x4556, 0x5452, "\000" 
+    IDC_PROJ_DIR, 0x403, 5, 0
+0x4f42, 0x4854, "\000" 
+    IDC_PROJ_DIR, 0x403, 5, 0
+0x4146, 0x4543, "\000" 
+    IDC_PROJ_DIR, 0x403, 9, 0
+0x4146, 0x4543, 0x4f43, 0x504d, "\000" 
+    0
+END
+
+IDD_CMD_ALU DLGINIT
+BEGIN
+    IDC_OPERATOR, 0x403, 4, 0
+0x4e41, 0x0044, 
+    IDC_OPERATOR, 0x403, 3, 0
+0x524f, "\000" 
+    IDC_OPERATOR, 0x403, 4, 0
+0x4f4e, 0x0054, 
+    IDC_OPERATOR, 0x403, 4, 0
+0x4f58, 0x0052, 
+    IDC_OPERATOR, 0x403, 5, 0
+0x554d, 0x544c, "\000" 
+    IDC_OPERATOR, 0x403, 4, 0
+0x4944, 0x0056, 
+    IDC_OPERATOR, 0x403, 4, 0
+0x5553, 0x0042, 
+    IDC_OPERATOR, 0x403, 4, 0
+0x4441, 0x0044, 
+    0
+END
+
+IDD_CMD_NN DLGINIT
+BEGIN
+    IDC_NN_METHOD, 0x403, 6, 0
+0x5254, 0x4941, 0x004e, 
+    IDC_NN_METHOD, 0x403, 5, 0
+0x4554, 0x5453, "\000" 
+    0
+END
+
+IDD_CMD_FMMNN DLGINIT
+BEGIN
+    IDC_FMMNN_METHOD, 0x403, 6, 0
+0x5254, 0x4941, 0x004e, 
+    IDC_FMMNN_METHOD, 0x403, 5, 0
+0x4554, 0x5453, "\000" 
+    0
+END
+
+IDD_CMD_FNN DLGINIT
+BEGIN
+    IDC_FNN_METHOD, 0x403, 6, 0
+0x5254, 0x4941, 0x004e, 
+    IDC_FNN_METHOD, 0x403, 5, 0
+0x4554, 0x5453, "\000" 
+    0
+END
+
+IDD_CMD_EIGEN DLGINIT
+BEGIN
+    IDC_EIGEN_METHOD, 0x403, 6, 0
+0x5254, 0x4941, 0x004e, 
+    IDC_EIGEN_METHOD, 0x403, 5, 0
+0x4554, 0x5453, "\000" 
+    0
+END
+
+IDD_CMD_MOTION DLGINIT
+BEGIN
+    IDC_MOTION_METHOD, 0x403, 3, 0
+0x5348, "\000" 
+    IDC_MOTION_METHOD, 0x403, 3, 0
+0x4b4c, "\000" 
+    IDC_MOTION_METHOD, 0x403, 3, 0
+0x4d42, "\000" 
+    IDC_MOTION_METHOD, 0x403, 6, 0
+0x5950, 0x4c52, 0x004b, 
+    0
+END
+
+IDD_CMD_DEPTH DLGINIT
+BEGIN
+    IDC_DEPTH_METHOD, 0x403, 11, 0
+0x4942, 0x4352, 0x4648, 0x4549, 0x444c, "\000" 
+    0
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CT21 FRTK 1.0"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CT21 Face Recognition Toolkit 1.0",IDC_STATIC,40,10,119,
+                    8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SoftComputingWnd.ico"
+IDR_SOFTCOTYPE          ICON    DISCARDABLE     "res\\SoftComputingWndDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "Foot",                        ID_VIEW_FOOT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SoftComputingWnd...",  ID_APP_ABOUT
+    END
+    POPUP "Perception"
+    BEGIN
+        POPUP "Representation"
+        BEGIN
+            MENUITEM "Color",                       ID_COLOR
+            MENUITEM "Coordinates",                 ID_COORD
+            POPUP "Shape"
+            BEGIN
+                MENUITEM "Blob Analysis",               ID_BLOB
+                MENUITEM "Edge Extraction",             ID_EDGE
+            END
+            POPUP "Primitives"
+            BEGIN
+                MENUITEM "Arithmetic/Logic",            ID_ALU
+                MENUITEM "Threshold",                   ID_TH
+                MENUITEM "Projection",                  ID_PROJ
+            END
+            MENUITEM "",                            ID_MENUITEM32814
+        END
+        POPUP "Recognition"
+        BEGIN
+            MENUITEM "Fuzzy NN",                    ID_FNN
+            MENUITEM "NN",                          ID_NN
+            MENUITEM "FMMNN",                       ID_FMMNN
+        END
+    END
+    POPUP "Interaction"
+    BEGIN
+        POPUP "Intention Reading"
+        BEGIN
+            POPUP "External Intention"
+            BEGIN
+                MENUITEM "Occlusion",                   ID_OCCLUSION
+                MENUITEM "Motion",                      ID_MOTION
+                POPUP "2D/3D Pose"
+                BEGIN
+                    MENUITEM "Depth Extraction",            ID_DEPTH
+                    MENUITEM "Blob Analysis",               ID_BLOB
+                END
+            END
+            POPUP "Internal Intention"
+            BEGIN
+                MENUITEM "Facial Expression Recognition", ID_FEREC
+            END
+        END
+        POPUP "Action"
+        BEGIN
+            POPUP "Focusing/Centering"
+            BEGIN
+                MENUITEM "Pursuit Control",             ID_PURSUIT
+                MENUITEM "Vergence Control",            ID_VERGENCE
+            END
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SoftComputingWnd MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SoftComputingWnd\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SoftComputingWnd.EXE\0"
+            VALUE "ProductName", "SoftComputingWnd Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CT21 Face Recognition Toolkit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SoftComputingWnd\n\nSoftCo\n\n\nSoftComputingWnd.Document\nSoftCo Document"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SoftComputingWnd.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

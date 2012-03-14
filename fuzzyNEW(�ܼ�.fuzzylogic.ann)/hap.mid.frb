@@ -1,0 +1,111 @@
+!
+! facial expresssion sample fuzzy rulebase
+!
+BeginRuleBase
+	Name: happiness.middle.fuzzy.RuleSet
+	DefuzzificationType: CenterOfGravity
+
+	BeginIfVariables
+		Name: m1
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: m2
+		BeginTermSet
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: m3
+		BeginTermSet
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+		!
+		Name: m4
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+	EndIfVariables
+
+	BeginThenVariable
+		Name: mo
+		BeginTermSet
+			Name: L
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.0 0.25 0.0  0.25			
+			!
+			Name: M
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Triangular
+			Parameters: 0.5 0.5
+			!
+			Name: H
+			UniverseOfDiscourse: 0. 1.0
+			NoOfSamples: 256
+			MembershipType: Trapezoidal 
+			Parameters: 0.75 1.0  0.25 0.0
+		EndTermSet
+	EndThenVariable
+
+	BeginRule
+		Rule: default
+			Then mo is L
+		Rule: 11
+			If m1 is L and m2 is H and m3 is H and m4 is M Then mo is H
+	EndRule
+EndRuleBase
