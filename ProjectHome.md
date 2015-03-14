@@ -1,0 +1,1 @@
+This project includes private implementation of C.T.Lin's Fuzzy Neural Network based on his papers.
